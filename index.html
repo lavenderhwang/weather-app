@@ -8,6 +8,22 @@
     <title>Weather App</title>
   </head>
   <body>
-    <h1>hi</h1>
+    <form id="form" action="/submit" method="POST">
+      <div class="searchbar">
+        <img src="assets/search.svg" alt="search icon" />
+        <input type="text" id="city" name="city" placeholder="Search city" />
+      </div>
+      <input type="radio" id="celcius" name="degree" value="celcius" />
+      <label for="celcius">Celcius</label>
+      <input type="radio" id="fahrenheit" name="degree" value="fahrenheit" />
+      <label for="fahrenheit">Fahrenheit</label>
+      <input type="submit" value="Submit" />
+    </form>
+
+    <div class="display">
+      <h1 id="condition"></h1>
+      <img id="icon" src="/" alt="weather icon" />
+      <p id="temp"></p>
+    </div>
   </body>
 </html>
